@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numeroSecreto = Math.floor(Math.random() * 11);
+        // declarando um número aleatorio inteiro de 1 a 10
+        console.log(numeroSecreto)
+        // printando ele no console para pescar 
+        let numero = prompt("Adivinhe qual o número: ");
+        // perguntando ao usuario qual o numero
+        if(numero == numeroSecreto){
+            // condição de acerto
+            alert("Parabéns! Você encontrou o número!");
+            // alertando o usuario que ele acertou
+            let tenteNovamente = confirm("Deseja jogar novamente?");
+            if(tenteNovamente){
+                location.reload();
+            }else{
+                alert("Tudo bem! até mais")
+            }
+        }else{
+            alert("Tente novamente!")
+            // avisando o usuario que ele errou
+            location.reload();
+            // recomeçando o código
+        }
+        //Sobre o if
+        /*
+        ==
+        igual
+        ===
+        igual restrita 
+        !=
+
+        !==
+        >
+        <
+        >=
+        <=
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

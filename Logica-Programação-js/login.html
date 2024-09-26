@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let bancoDeDados = [
+            "jose@email.com",
+            "1234"
+        ];
+        //Receber o email do usuario
+        let email = prompt("Digite o seu email: ");
+        //Receber a senha do usuario
+        let senha = prompt("Digite sua senha: ");
+        // verificar se email consta no banco de dados
+        // verificar se senha consta no banco de dados
+        if(email & senha === bancoDeDados[0,1]){
+            alert("Logado com sucesso")
+        }else{
+            // caso de erro na email exibir o alert "email incorreto"
+            if(email != bancoDeDados[0]){
+                alert("email incorreto")
+            }
+            if(senha != bancoDeDados[1]){
+                alert("senha incorreta")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
