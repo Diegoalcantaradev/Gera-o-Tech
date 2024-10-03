@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+            numeros = [];
+            for (let i = 0; i < 3; i++) {
+             let numero = parseInt(prompt(`Digite o ${i+1}º número:`));
+             numeros.push(numero);
+};
+            
+            function calcularMedia(numeros){
+                let soma = 0;
+
+                for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+                }
+                result = soma / 3
+                return result
+            };
+            media = calcularMedia(numeros)
+            alert("sua media é " + media);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
