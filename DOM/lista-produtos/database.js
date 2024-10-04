@@ -4,20 +4,23 @@ export const products = [
         price: 10.00,
         discountedPrice: 0.00,
         discounted:10,
-        category:"Capas"
+        category:"Calçados",
+        stock: 10
     },
     {
         name: "Produto 02",
         price: 25.00,
         discountedPrice: 0.00,
         discounted:50,
-        category:"Peliculas"
+        category:"Livros",
+        stock:10
     },
     {
-        name: "Produto 03",
+        name: "Codigo da vince",
         price: 50.00,
         discountedPrice: 0.00,
         discounted:0,
-        category:"Carregador"
+        category:"Livros",
+        stock:10
     }
 ];
